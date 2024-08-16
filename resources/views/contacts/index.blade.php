@@ -15,11 +15,11 @@
         <table class="table">
             <thead class="bg-black text-white">
                 <tr>
-                    <th><a href="{{ route('contacts.index', ['sort_field' => 'name', 'sort_direction' => request('sort_direction') === 'asc' ? 'desc' : 'asc']) }}">Name</a></th>
+                    <th><a class="btn btn-xs" href="{{ route('contacts.index', ['sort_field' => 'name', 'sort_direction' => request('sort_direction') === 'asc' ? 'desc' : 'asc']) }}">Name</a></th>
                     <th>Email</th>
                     <th>Phone</th>
                     <th>Address</th>
-                    <th><a href="{{ route('contacts.index', ['sort_field' => 'created_at', 'sort_direction' => request('sort_direction') === 'asc' ? 'desc' : 'asc']) }}">Created At</a></th>
+                    <th><a class="btn btn-xs" href="{{ route('contacts.index', ['sort_field' => 'created_at', 'sort_direction' => request('sort_direction') === 'asc' ? 'desc' : 'asc']) }}">Date</a></th>
                     <th>Actions</th>
                 </tr>
             </thead>
